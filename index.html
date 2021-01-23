@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dishan's Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,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" type="image/icon type">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+           
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Dishan Purkayastha</h1>
+            <h2>Student,Computer Science Engineering</h2>
+            <a href="Dishan Purkayastha Resume.pdf" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+Sophomore student finding intersections between technology and finance.
+My research and career interests lie in employing cutting edge technologies like Machine Learning, Artificial Intelligence,Data Science,etc to develop sustainable and efficient business models.
+Currently exploring new technologies and working on web software projects.
+Google certified digital marketeer,with strong leadership and professional communication skills.
+Budding entrepreneur always willing to collaborate to work on innovative ideas!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+    
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="December 2020 - January 2021">
+                <h3>Enactus</h3>
+                <h4>Web Development Intern</h4>
+                <p>
+                    <ul>
+                   <li> Developed a full fledged responsive website with my team using Wordpress,Custom CSS,Bootstrap,Google Analytics and SEO Optimization.</li>
+                   <li>Worked directly with the company leadership team and marketing team to develop strategies to generate website traffic and engagement.</li>
+                <li>Proposed and led a project to set up the company's WhatsApp For Business (WFB) profile. Was responsible for configuring and integrating the profile as per company requirements.</li>
+</ul> 
+</p>
+            </div>
+
+            <div data-date="July 2020 - August 2020">
+                <h3>The Climber</h3>
+                <h4>Business Development Intern</h4>
+                <p>
+                    <ul>
+                        <li>Served as the face of this IIM Bangalore incubated Edtech start-up at my University.</li>
+                    <li>     Was responsible for Business Development,Digital Marketing,Sales and Buzz Creation for the brand.</li>
+                                <li>    The internship helped me polish my leadership skills and gave me a taste of how modern day start-ups operate</li>
+                </ul> </p>
+            </div>
+
+            <div data-date="July 2020 - August 2020">
+                <h3>Unschool</h3>
+                <h4>Community Leader</h4>
+              
+                     <p>
+                        <ul>
+                            <li>Served as Senior Marketing Intern at this IIIT Hyderabad incubated start-up </li>
+                             <li>  Led a team of 15 marketing executives and implemented several strategies like Pyramid Selling,Network Marketing and Target Analytics</li>
+                    </ul> 
+                    </p>
+        </div>
+    </div> </div>
+    <!-- End #experience -->
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Kalinga Institue Of Industrial Technology,Bhubaneswar</h3>
+            <span class="education-date">2019-2023</span>
+            <h4>Bachelor Of Technology in Computer Science Engineering(CSE)</h4>
+            <p>
+                CGPA: 9.81
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>R.N Podar School,Mumbai</h3>
+            <span class="education-date">2017-2019</span>
+            <h4>CBSE XII </h4>
+            <P>
+                    Percentage: 90.2%
+            </P> 
+        </div>
+        <div class="education-block">
+            <h3>Maneckji Cooper Education Trust School,Mumbai</h3>
+            <span class="education-date">2017-2019</span>
+            <h4>ICSE X </h4>
+            <P>
+                Percentage: 96%
+        </P> 
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+    
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/1.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Social NGO Website</h3>
+                        <p>
+                            A web page for a Non-profit Organization,Enactus built using HTML,CSS,Bootstrap 4 and Vanilla Javascript.
+                        </p>
+                        <a href="https://dishanp.github.io/NGO-Website/">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/2.png" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Beatz</h3>
+                        <p>
+                            My version of an online music streaming service,Beatz. 
+                        </p>
+                        <a href="https://dishanp.github.io/Beatz/">View Project</a>
+                    </div>
+                </div>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="data:image/png;base64,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" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Flipkart Clone</h3>
+                        <p>
+                            My attempt on cloning a webpage of Flipkart.in using HTML,CSS and Bootstrap. 
+                        </p>
+                        <a href="https://dishanp.github.io/Flipkart-Clone/">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="data:image/png;base64,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" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>TypeTest</h3>
+                        <p>
+                            A simple web application that helps you assess,practice and improve your typing skills.
+                        </p>
+                        <a href="https://dishanp.github.io/TypeTest/">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="data:image/png;base64,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" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Password Guard</h3>
+                        <p>
+                            Password Guard is a great tool you may consider using while creating a secure password,which is hard to crack.
+                        </p>
+                        <a href="https://dishanp.github.io/Password-Guard/">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills" style="background-color: #EEF9FA;">
+        <h2 class="heading">Languages And Tools</h2>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>HTML 5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Shell Script</li>
+            <li>MySQL</li>
+            <li>Git</li>
+            <li>Wordpress</li>
+            <li>Linux</li>
+            <li>Oracle XE</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="education">
+        <h2 class="heading">Achievements</h2>
+        <div class="education-block">
+            <h3>1st Dan Black Belt In Taekwondo
+            </h3>
+            <span class="education-date">2013</span>
+            <h4>Taekwondo Association Of South Korea</h4>
+            <p>
+                Internationally Recognised as 1st Dan Black Belt In Taekwondo after having rigorously trained for 15 years. Have trained several students under me during this period.
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>CBSE XII Board Topper In English
+            </h3>
+            <span class="education-date">2019</span>
+            <h4>Central Board Of Secondary Education (C.B.S.E)</h4>
+            <p>
+                Secured 99/100 in CBSE XII English Examination,which was the highest score of 2017 among 17 lakh students
+            </p>
+        </div>
+        <div class="education-block">
+            <h3>5-Star Coder At Hackerrank
+            </h3>
+            <span class="education-date">2020</span>
+            <h4>Hackerrank</h4>
+            <p>
+                Specialised in problem solving and detailed algorithmic coding in C,C++,Java,Javascript and MySQL.
+            </p>
+        </div>
+        <div class="education-block">
+            <h3>Outstanding Leadership And Mentorship Skills
+            </h3>
+            <span class="education-date">2019</span>
+            <h4>IIM Indore</h4>
+            <p>
+                Was recognised for leadership and mentorship skills by IIM Indore during their annual cultural programme
+            </p>
+        </div>
+        <div class="education-block">
+            <h3>Recognised By Github for contributing to Open Source Projects
+            </h3>
+            <span class="education-date">2020</span>
+            <h4>Github</h4>
+            <p>
+            Was shortlisted and awarded by Github among lakhs of open source contributors during Github's annual
+Hacktober Fest Challenge,2020.
+            </p>
+        </div>
+        <div class="education-block">
+            <h3>Competitive Coding
+            </h3>
+            <span class="education-date">2020-2021</span>
+            <h4>Rankings</h4>
+            <p>
+                CodeChef:  Highest Rating - 1384<br>
+                Geeks For Geeks:  Institute Rank - 59<br>
+                CodeMate 2021:  Global Rank - 367
+            </p>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+    
+
+
+
+    <div id="education" name="courses" style="background-color: #DBF5F8 ;">
+        <h2 class="heading">Courses And Certifications</h2>
+        <div class="education-block">
+            <h3>Digital Marketing</h3>
+            <h4>Google</h4>
+        </div>
+        <div class="education-block">
+            <h3>New Models Of Business In The Society</h3>
+            <h4>University Of Virginia</h4>
+        </div>
+        <div class="education-block">
+            <h3>Maths For Data Science</h3>
+            <h4>Duke University</h4>
+        </div>
+        <div class="education-block">
+            <h3>Financial Planning</h3>
+            <h4>University Of Florida</h4>
+        </div>
+        <div class="education-block">
+            <h3>AWS Machine Learning</h3>
+            <h4>Amazon Web Services</h4>
+        </div>
+        <div class="education-block">
+            <h3>Advanced Data Structures And Algorithms</h3>
+            <h4>Udemy</h4>
+        </div>
+
+        
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+    
+
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dishan.purkayastha@gmail.com" style="text-decoration: none;"  
+                target="_blank" > <button class="btn btn-primary btn-lg">Mail Me</button></a>
+           
+        </div>
+        <!-- End #contact-form -->  
+    </div>
+    <!-- End #contact -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2021 Dishan Purkayastha
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/dishanp" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/dishan-purkayastha-a2788619b/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/dishaanp/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

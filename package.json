@@ -1,6 +1,6 @@
 {
-  "name": "devportfolio-template",
-  "version": "1.2.2",
+  "name": "Dishan's Portfolio",
+  "version": "1.0.0",
   "description": "",
   "main": "js/scripts.js",
   "scripts": {
@@ -12,9 +12,9 @@
     "website",
     "tech",
     "coding",
-    "dev"
+    "dishan"
   ],
-  "author": "Ryan Fitzgerald",
+  "author": "Dishan Purkayastha",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.0",
